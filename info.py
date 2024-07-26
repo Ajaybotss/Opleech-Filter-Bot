@@ -63,7 +63,7 @@ IS_TUTORIAL = bool(environ.get('IS_TUTORIAL', True))
 MSG_ALRT = environ.get('MSG_ALRT', 'HELLO MAWA❤️')
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002137243887'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'MOVIEZONECHAT1')
-P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "TRUE")), True)
+P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "FALSE")), False)
 IMDB = is_enabled((environ.get('IMDB', "True")), True)
 AUTO_FFILTER = is_enabled((environ.get('AUTO_FFILTER', "True")), True)
 AUTO_DELETE = is_enabled((environ.get('AUTO_DELETE', "True")), True)
@@ -96,8 +96,8 @@ else:
     ON_HEROKU = False
 BIND_ADRESS = str(getenv('WEB_SERVER_BIND_ADDRESS', '0.0.0.0'))
 FQDN = str(getenv('FQDN', BIND_ADRESS)) if not ON_HEROKU or getenv('FQDN') else APP_NAME+'opleech'
-URL = "https://opleech-5250e5fcd60e.herokuapp.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
-    "https://opleech-5250e5fcd60e.herokuapp.com/".format(FQDN, PORT)
+URL = "https://opleech-filter-bot-fg4c.onrender.com/".format(FQDN) if ON_HEROKU or NO_PORT else \
+    "https://opleech-filter-bot-fg4c.onrender.com/".format(FQDN, PORT)
 SLEEP_THRESHOLD = int(environ.get('SLEEP_THRESHOLD', '60'))
 WORKERS = int(environ.get('WORKERS', '4'))
 SESSION_NAME = str(environ.get('SESSION_NAME', 'opleechbot'))
@@ -112,9 +112,9 @@ else:
     ON_HEROKU = False
 HAS_SSL=bool(getenv('HAS_SSL',False))
 if HAS_SSL:
-    URL = "https://opleech-5250e5fcd60e.herokuapp.com/".format(FQDN)
+    URL = "https://opleech-filter-bot-fg4c.onrender.com/".format(FQDN)
 else:
-    URL = "https://opleech-5250e5fcd60e.herokuapp.com/".format(FQDN)
+    URL = "https://opleech-filter-bot-fg4c.onrender.com/".format(FQDN)
 
 
 
