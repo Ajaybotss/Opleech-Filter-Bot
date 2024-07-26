@@ -15,8 +15,8 @@
       "index",
       "inline"
     ],
-    "website": "https://github.com/SudoR2spr/Opleech-Filter-Bot",
-    "repository": "https://github.com/SudoR2spr/Opleech-Filter-Bot",
+    "website": "https://github.com/AJAYBOTS/Opleech-Filter-Bot",
+    "repository": "https://github.com/AJAYBOTS/Opleech-Filter-Bot",
     "env": {
         "BOT_TOKEN": {
             "description": "Your bot token.",
